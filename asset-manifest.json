@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/sap-app/static/js/main.3f7f4c7a.js",
+    "index.html": "/sap-app/index.html",
+    "main.3f7f4c7a.js.map": "/sap-app/static/js/main.3f7f4c7a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3f7f4c7a.js"
+  ]
+}
