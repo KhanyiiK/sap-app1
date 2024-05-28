@@ -1,0 +1,28 @@
+/* BlogPage.css */
+.blog-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .blog-thumbnails {
+    display: flex;
+    flex-direction: column; /* Display thumbnails vertically */
+  }
+  
+  .blog-thumbnail {
+    cursor: pointer;
+    margin-bottom: 10px; /* Add margin between thumbnails */
+  }
+  
+  .blog-thumbnail img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .full-blog-container {
+    width: 60%;
+  }
+  
