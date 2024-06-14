@@ -16,8 +16,8 @@ const Loader = () => {
           <defs>
             <linearGradient id="ttb" y2="1">
 
-                {/* if you are thinking how it is animating 
-                    we have added animation to svg here 
+                {/* 
+                     added animation to svg here 
                 */}
 
               <stop offset="100%" stopOpacity="1" stopColor="#333">

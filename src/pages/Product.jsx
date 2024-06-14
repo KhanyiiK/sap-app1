@@ -121,7 +121,7 @@ const Product = ({ cart, addToCart }) => {
   const { id } = useParams();
   const [quantity, setQuantity] = useState(1); // State to manage quantity
 
-  // Replace with actual product data or fetch from an API
+  //  product data
   const products = [
     {
       id: 1,

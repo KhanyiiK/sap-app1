@@ -56,26 +56,29 @@ const thumbnailStyle = {
 };
 
 const ImageSlider = ({ slides }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); // State to manage current slide index
 
+  // Function to navigate to the previous slide
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
+   // Function to navigate to the next slide
   const goToNext = () => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
 
+  // Function to navigate to a specific slide
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
 
   const slideStylesWithBackground = {
-    ...slideStyles,
+    ...slideStyles, // Assuming slideStyles is defined elsewhere
     backgroundImage: `url(${process.env.PUBLIC_URL}${slides[currentIndex].url})`,
   };
 
@@ -88,7 +91,7 @@ const ImageSlider = ({ slides }) => {
         ❱
       </div>
       <div style={{ ...slideStylesWithBackground, height: "400px" }}></div>
-      <div style={thumbnailsContainerStyles}>
+      <div style={thumbnailsContainerStyles}> {/* Container for slide thumbnails */}
         {slides.map((slide, slideIndex) => (
           <img
             key={slideIndex}
@@ -98,7 +101,8 @@ const ImageSlider = ({ slides }) => {
               ...thumbnailStyle,
               border: slideIndex === currentIndex ? "2px solid #000" : "2px solid transparent",
             }}
-            onClick={() => goToSlide(slideIndex)}
+            // Click handler to navigate to the clicked slide
+            onClick={() => goToSlide(slideIndex)} 
           />
         ))}
       </div>

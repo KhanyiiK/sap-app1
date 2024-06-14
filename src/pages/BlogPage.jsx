@@ -717,18 +717,21 @@ content:
       <div style={{ display: "flex" }}>
         <div style={{ flex: 1, marginRight: "20px" }}>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            {blogs.map((blog) => (
+            {/* Mapping over each blog */}
+            {blogs.map((blog) => ( 
               <BlogThumbnail
                 key={blog.id}
                 title={blog.title}
                 thumbnail={blog.thumbnail}
-                onClick={() => handleSelectBlog(blog)}
+                onClick={() => handleSelectBlog(blog)} // Click handler for selecting a blog
               />
             ))}
           </div>
         </div>
         <div style={{ flex: 3 }}>
+         {/* Display full blog if a blog is selected */} 
           {selectedBlog && (
+            
             <FullBlog
               title={selectedBlog.title}
               content={selectedBlog.content}

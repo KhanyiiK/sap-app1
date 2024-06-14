@@ -14,8 +14,9 @@ const Container = styled.div`
 const Categories = () => {
   return (
     <Container>
+      {/* Mapping over categories */}
       {categories.map((item) => (
-        <CategoryItem item={item} key={item.id} />
+        <CategoryItem item={item} key={item.id} /> 
       ))}
     </Container>
   );

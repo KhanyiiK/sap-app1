@@ -119,11 +119,12 @@ const ProductList = () => {
           </Select>
         </Filter>
       </FilterContainer>
+{/* This is the container component where I'll display a list of products */}
       <ProductsContainer>
         {products.map((product) => (
-          <Link key={product.id} to={`/product/${product.id}`}>
+          <Link key={product.id} to={`/product/${product.id}`}> {/* I'm wrapping each product in a Link component for navigation to the product's detail page */}
           <ProductItem>
-            <ProductImage src={product.imageUrl} alt={product.name} />
+            <ProductImage src={product.imageUrl} alt={product.name} />   {/* I'm displaying the product image and name here */}
             <div>{product.name}</div>
           </ProductItem>
         </Link>
