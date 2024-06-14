@@ -11,6 +11,7 @@ import Cart from './pages/Cart';
 import BlogPage from './pages/BlogPage';
 import ImageSlider from './pages/ImageSlider';
 import PaintPage from './pages/PaintPage'; // Import PaintPage
+import Art from './pages/Art'; // Import Art page
 
 function App() {
   // Loader state
@@ -34,14 +35,15 @@ function App() {
       <HashRouter basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product/:id" element={<Product />} />
+          <Route path="/product" element={<Product />} />
           <Route path="/productlist" element={<ProductList />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/imageslider" element={<ImageSlider />} />
-          <Route path="/paint" element={<PaintPage />} /> {/* Add route for PaintPage */}
+          <Route path="/paint" element={<PaintPage />} /> {/* Route for PaintPage */}
+          <Route path="/art" element={<Art />} /> {/* Route for Art page */}
         </Routes>
       </HashRouter>
     )

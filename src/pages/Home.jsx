@@ -4,11 +4,24 @@ import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
-//import Products from "../components/Products";
 import Slider from "../components/Slider";
 import { popularProducts } from "../data"; // Adjust path as per your project structure
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+// Define keyframes for fade-in animation
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const Container = styled.div`
+  animation: ${fadeIn} 2s ease-in; // Apply the fade-in animation
+`;
 
 const ProductContainer = styled.div`
   display: flex;
@@ -22,6 +35,7 @@ const ProductCard = styled.div`
   width: calc(25% - 20px); /* 25% width for each item with 20px gap between */
   text-align: center;
   margin-bottom: 20px;
+  animation: ${fadeIn} 2s ease-in; // Apply the fade-in animation
 `;
 
 const ProductImage = styled.img`
@@ -33,7 +47,7 @@ const ProductImage = styled.img`
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <Announcement />
       <Navbar />
       <Slider />
@@ -49,7 +63,7 @@ const Home = () => {
       </ProductContainer>
       <Newsletter />
       <Footer />
-    </div>
+    </Container>
   );
 };
 
