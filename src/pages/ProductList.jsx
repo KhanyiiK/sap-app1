@@ -122,11 +122,11 @@ const ProductList = () => {
       <ProductsContainer>
         {products.map((product) => (
           <Link key={product.id} to={`/product/${product.id}`}>
-            <ProductItem>
-              <ProductImage src={product.imageUrl} alt={product.name} />
-              <div>{product.name}</div>
-            </ProductItem>
-          </Link>
+          <ProductItem>
+            <ProductImage src={product.imageUrl} alt={product.name} />
+            <div>{product.name}</div>
+          </ProductItem>
+        </Link>
         ))}
       </ProductsContainer>
       <Newsletter />

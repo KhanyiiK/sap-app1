@@ -34,7 +34,7 @@ function App() {
       <HashRouter basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/product/:id" element={<Product />} />
           <Route path="/productlist" element={<ProductList />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
