@@ -53,6 +53,7 @@ const PinkBorder = styled.div`
 const Button = styled.button`
   background-color: pink;
   color: white;
+  text-decoration: none;
   padding: 10px 20px;
   font-size: 16px;
   border: none;
