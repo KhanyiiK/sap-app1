@@ -89,9 +89,15 @@ import {
         <Left>
           <Logo>GLOW-ISH</Logo>
           <Desc>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don’t look even slightly believable.
+          GLOW-ISH is your ultimate destination for beauty and skincare products 
+          that combine quality and innovation. Our wide range of products caters to 
+          diverse skin needs and beauty preferences, ensuring that everyone can 
+          find their perfect match. From rejuvenating serums to hydrating cleansers 
+          and radiant makeup, GLOW-ISH provides solutions designed to enhance your 
+          natural glow and bring out your best self. Our commitment to excellence 
+          and customer satisfaction ensures that you receive products that are not 
+          only effective but also safe and enjoyable to use. Welcome to GLOW-ISH, 
+          where your beauty journey begins.
           </Desc>
           <SocialContainer>
             <SocialIcon color="3B5999">
@@ -113,9 +119,7 @@ import {
           <List>
             <ListItem>Home</ListItem>
             <ListItem>Cart</ListItem>
-            <ListItem>Man Fashion</ListItem>
-            <ListItem>Woman Fashion</ListItem>
-            <ListItem>Accessories</ListItem>
+            <ListItem>Shop</ListItem>
             <ListItem>My Account</ListItem>
             <ListItem>Order Tracking</ListItem>
             <ListItem>Wishlist</ListItem>
@@ -125,13 +129,13 @@ import {
         <Right>
           <Title>Contact</Title>
           <ContactItem>
-            <Room style={{ marginRight: "10px" }} /> 622 Dixie Path , South Tobinchester 98336
+            <Room style={{ marginRight: "10px" }} /> Braamfontein , Johannesburg
           </ContactItem>
           <ContactItem>
-            <Phone style={{ marginRight: "10px" }} /> +1 234 56 78
+            <Phone style={{ marginRight: "10px" }} /> +27 234 56 78
           </ContactItem>
           <ContactItem>
-            <MailOutline style={{ marginRight: "10px" }} /> contact@lama.dev
+            <MailOutline style={{ marginRight: "10px" }} /> khanyiikhumalo@gmail.com
           </ContactItem>
           <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
         </Right>

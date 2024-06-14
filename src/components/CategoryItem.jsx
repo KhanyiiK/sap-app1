@@ -49,7 +49,7 @@ const CategoryItem = ({ item }) => {
       <Image src={item.img} />
       <Info>
         <Title>{item.title}</Title>
-        {/* Use Link component to navigate to ProductList page */}
+        {/* Link component to navigate to ProductList page */}
         <Link to="/productlist">
           <Button>SHOP NOW</Button>
         </Link>

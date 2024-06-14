@@ -51,6 +51,11 @@ const Center = styled.div`
 const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: #FFC5C5;
+  }
 `;
 
 const Right = styled.div`

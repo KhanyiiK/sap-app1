@@ -1,0 +1,28 @@
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: pink;
+}
+
+.svg-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loader svg {
+    width: 120px; /* Adjust the width of the SVG image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.loading-text {
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1rem;
+}

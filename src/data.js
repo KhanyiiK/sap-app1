@@ -25,54 +25,50 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: `${process.env.PUBLIC_URL}/Images/serum1.jpeg`,
-    title: "GLOW SERUMS",
-  },
-  {
-    id: 2,
-    img: `${process.env.PUBLIC_URL}/Images/mockup1.jpeg`,
-    title: "GLOW-ISH SKINCARE",
-  },
-  {
-    id: 3,
-    img: `${process.env.PUBLIC_URL}/Images/makeupcombo1.jpg`,
-    title: "MAKEUP",
-  },
+    img: `${process.env.PUBLIC_URL}/Images/download.jpg`,
+    title: "SHOP NOW",
+  }
 ];
 
 export const popularProducts = [
   {
     id: 1,
-    img: `${process.env.PUBLIC_URL}/Images/concelar3.jpg`,
+    img: `${process.env.PUBLIC_URL}/Images/ComboS.jpg`,
+    link: "/product/4", // Example product page link
   },
   {
     id: 2,
-    img: `${process.env.PUBLIC_URL}/Images/makeupcombo1.jpg`,
+   img: `${process.env.PUBLIC_URL}/Images/NightCream.jpg`,
+    link: "/product/8",
   },
   {
     id: 3,
-    img: `${process.env.PUBLIC_URL}/Images/SerumMen2.jpg`,
+    img: `${process.env.PUBLIC_URL}/Images/Ret.jpg`,
+    link: "/product/3",
   },
   {
     id: 4,
-    img: `${process.env.PUBLIC_URL}/Images/skintint1.jpg`,
+    img: `${process.env.PUBLIC_URL}/Images/Lips.jpg`,
+    link: "/product/13",
   },
   {
     id: 5,
-    img: `${process.env.PUBLIC_URL}/Images/foundation1.jpg`,
+    img: `${process.env.PUBLIC_URL}/Images/Masc.jpg`,
+    link: "/product/18",
   },
   {
     id: 6,
-    img: `${process.env.PUBLIC_URL}/Images/serumMen1.jpg`,
+    img: `${process.env.PUBLIC_URL}/Images/Clay.jpg`,
+    link: "/product/20",
   },
   {
     id: 7,
-    img: `${process.env.PUBLIC_URL}/Images/mockup1.jpeg`,
+    img: `${process.env.PUBLIC_URL}/Images/Cleanser.jpg`,
+    link: "/product/7",
   },
   {
     id: 8,
-    img: `${process.env.PUBLIC_URL}/Images/Comb01.jpg`,
+    img: `${process.env.PUBLIC_URL}/Images/NightCream.jpg`,
+    link: "/product/8",
   },
 ];
-
-  

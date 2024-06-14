@@ -3,6 +3,7 @@ import Announcement from "../components/Announcement";
 import Navbar from "../components/Navbar";
 import FullBlog from "../components/FullBlog"; // Import the FullBlog component
 
+
 // BlogThumbnail component to display individual blog thumbnails
 const BlogThumbnail = ({ title, thumbnail, onClick }) => {
   return (
@@ -17,13 +18,14 @@ const BlogThumbnail = ({ title, thumbnail, onClick }) => {
         src={thumbnail}
         alt={title}
         style={{
-          width: "120px",
+          width: "50%", // Adjusted to fit container width
           height: "auto",
           objectFit: "cover",
           borderRadius: "5px",
+          marginTop: "10px", // Margin at the top
         }}
       />
-      <h3>{title}</h3>
+      <h3 style={{ marginTop: "5px" }}>{title}</h3>
     </div>
   );
 };
@@ -35,7 +37,7 @@ const BlogPage = () => {
     {
       id: 1,
       title: "Critical Analysis Essay on Net/Web Art",
-      thumbnail: "/Images/Makeup2.jpeg",
+      thumbnail: `${process.env.PUBLIC_URL}/Images/Crit.png`,
       content:
       <div>
         <p>
@@ -232,7 +234,7 @@ const BlogPage = () => {
     {
       id: 2,
       title: "Net Art Reseacrh - Colorful Canvas",
-      thumbnail: "/Images/Makeup3.jpeg",
+      thumbnail:  `${process.env.PUBLIC_URL}/Images/Net.png`,
       content: 
       <div>
         <p>
@@ -316,7 +318,7 @@ const BlogPage = () => {
     {
       id: 3,
       title: "Reflection",
-      thumbnail: "/Images/MultiFace1.jpeg",
+      thumbnail:  `${process.env.PUBLIC_URL}/Images/Ref.png`,
       content: 
       <div>
         <p>
@@ -348,6 +350,349 @@ const BlogPage = () => {
         </p>
       </div>,
     },
+    {
+      id: 4,
+      title: "Blog Post Week 4",
+      thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+      content: 
+      <div>
+        <p>
+          <b>Week 4: Dev Blog</b><br></br>
+          This week has been a dynamic blend of theory, practical application, and creative brainstorming. As we delve deeper into developing our web applications and internet artwork, I find myself continuously engaged and challenged by the process.
+          <br></br>
+          <b>Revision Videos:</b> The revision videos this week, focusing on interaction and the WWW, were particularly insightful. They emphasized the importance of intuitive design and user interaction, reinforcing the need to keep the end-user in mind throughout development.
+          <br></br>
+          <b>Technical Questions:</b> I’ve been exploring state management in ReactJS, specifically the useState and useReducer methods. Implementing state management efficiently is more complex than anticipated. If anyone has tips on managing state in larger applications, I’d love to hear your experiences.
+          <br></br>
+          <b>Brainstorming and Research for Internet Artwork:</b> Inspired by Mailloux’s “Convention and Context” and discussions on conceptualizing web applications, I’m brainstorming an artwork that evolves based on user interaction. For example, a dynamic visual representation that changes according to user inputs like mouse movement or clicks, or even external data sources like weather APIs.
+          <br></br>
+          <b>Thoughts on Internet/Web/Net Art:</b> Internet art has evolved from simple web pages to complex, interactive experiences. The web is a unique canvas that is both accessible and mutable, allowing artists to reach a global audience and continuously update their work. This fluidity is something I want to incorporate into my project, ensuring it feels alive and responsive rather than static.
+          <br></br>
+          <b>Theory Work:</b> This week’s theoretical readings have been enriching. Mailloux’s article on “Convention and Context” provided a deep dive into how context shapes understanding, which is directly applicable to web design. User context—such as device, location, and time of day—can dramatically alter the user experience. Considering these variables is essential for creating personalized and effective interactions.
+          <br></br>
+          <b>Practical Work:</b> The in-class exercises focusing on ReactJS have been immensely helpful. The hands-on approach is the best way for me to internalize these concepts. Building small projects and solving exercises related to state management, lifecycle methods, and routing has given me a clearer understanding of how to structure my application. I’m now more confident in using React to build a responsive and interactive web application.
+          <br></br>
+          Week 4 has been a blend of theoretical insights and practical challenges. The ongoing engagement with both the academic and technical aspects of web development is proving to be a rewarding experience. As I move forward, I’m excited to continue refining my project, integrating feedback from peers, and experimenting with new ideas. The journey from concept to execution is becoming clearer, and I’m eager to see where it leads.
+        </p>
+      </div>,
+    },
+    {
+      id: 5,
+title: "Blog Post Week 3",
+thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+content: 
+<div>
+  <p>
+    <b>Week 3: Dev Blog</b><br></br>
+    This week was a deeper dive into React and an exploration of web art. The combination of theory and practical exercises provided a comprehensive understanding of both topics.
+    <br></br>
+    <b>Internet/Web Art Lecture:</b> The recorded lecture on Internet/Web Art was enlightening. It covered the evolution of web art, highlighting how artists have used the internet as a medium for creativity. The discussion on the importance of web standards was particularly eye-opening, emphasizing how standards ensure accessibility and consistency across different browsers and devices.
+    <br></br>
+    <b>ReactJS:</b> During our in-person classes, we delved into React concepts such as JSX, components, props, and conditional rendering. These foundational elements play a crucial role in building web applications. The practical exercises helped reinforce these concepts and improve my comprehension. I found conditional rendering particularly fascinating as it enhances interactivity and user engagement in applications. Despite the organized learning approach, I faced challenges. Initially, grasping JSX proved tricky due to its blend of HTML and JavaScript syntax. While components offer modularity and reusability, careful structuring is necessary to avoid prop drilling—a scenario where props are passed through levels of component nesting. This challenge escalates with the complexity of the component hierarchy. Dealing with props presented another hurdle. Although vital for data transfer between components, managing props across components can be cumbersome. Distinguishing between props and state further complicates matters. It's crucial to keep components stateless whenever possible to maintain clarity and simplicity. Mastering rendering demanded an understanding of JavaScript logic. Correctly implementing conditions to dynamically update the UI without re-renders proved challenging yet rewarding when done right. Mishandling this aspect could result in performance issues or unexpected UI behavior.
+    <br></br>
+    <b>Technical Exercises:</b> The practical exercises were invaluable for applying theoretical knowledge. Building small projects using JSX, components, and props helped me understand how to structure a React application efficiently. Working through conditional rendering scenarios demonstrated how to create applications that respond dynamically to user input.
+    <br></br>
+    <b>Why We Focus on Web Standards:</b> The material on web standards stressed their importance in web development. Standards ensure that web applications are accessible to all users, regardless of their browser or device. This focus on inclusivity and consistency is crucial for creating web applications that provide a seamless user experience.
+    <br></br>
+    Week 3 was a productive blend of theory and practice. The lectures on web art and the emphasis on web standards provided a strong theoretical foundation. The practical ReactJS exercises helped translate this theory into tangible skills. As I continue developing my project, these insights will be instrumental in creating an accessible, dynamic web application. I'm looking forward to building on this knowledge in the coming weeks.
+  </p>
+</div>,
+    },
+    {
+      id: 6,
+      title: "Blog Post Week 5",
+      thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+      content: 
+      <div>
+        <p>
+          <b>Week 5: Dev Blog</b><br></br>
+          This week continued our deep dive into React, focusing on context management, and also explored the history and development of the field of web development. The blend of theoretical insights and practical exercises has been both challenging and enriching.
+          <br></br>
+          <b>History and Development of the Field:</b> The readings this week provided a comprehensive overview of internet art and its impact on traditional art forms. Dean's article "What Is 'Internet Art'? Here Are 10 Masterpieces To Know" (2019) highlights significant works that define the genre, emphasizing how the internet has become a medium for creativity. Ricci's "Net Art and How The Internet Has Created A New Medium" (2020) further explores the evolution of net art, showing how the internet has opened new avenues for artistic expression. The impact of internet art on traditional art is explored in O’Toole’s "The New Museum Hits 'Save' on Net Art" (2019), which discusses how institutions are preserving digital works. The ICA/Boston’s (2018) article on the exhibition examining the internet's impact on visual art illustrates how the internet is reshaping the art world, influencing both the creation and curation of artworks.
+          <br></br>
+          <b>ReactJS:</b>
+          <br></br>
+          <b>Context Management:</b> In-class sessions this week focused on context management in React. Context management is crucial for managing state across different parts of an application without prop drilling. This method simplifies the process of passing data through the component tree, making the application more efficient and easier to maintain. Understanding how to create and use context was initially challenging, as it involves a shift from the more straightforward prop drilling method. However, the benefits of a cleaner and more scalable codebase became apparent as we progressed through the exercises. Despite its advantages, context management comes with its own set of challenges. Creating a context requires setting up a context provider, which can add complexity to the application’s structure. Additionally, improper use of context can lead to performance issues, such as unnecessary re-renders when the context value changes. It’s crucial to use context judiciously and understand when it’s appropriate to use it versus other state management solutions like Redux.
+          <br></br>
+          <b>GitHub: React App Push and Deployment:</b> This week, we also covered pushing React apps to GitHub and deploying them. Understanding the deployment process is essential for making our applications accessible to users. The steps involved in pushing code to GitHub, setting up a repository, and deploying the app required meticulous attention to detail. Learning how to resolve common deployment issues, such as build errors or incorrect configurations, was an invaluable part of the process.
+          <br></br>
+          <b>Technical Exercises:</b> The practical exercises on context management were particularly beneficial. They provided hands-on experience in setting up context providers, consuming context in different components, and understanding how to manage global state effectively. These exercises reinforced the theoretical concepts and helped me become more comfortable with using context in real-world applications.
+          <br></br>
+          Week 5 has been a significant step forward in both understanding the historical context of web development and mastering advanced React concepts. The historical readings provided valuable insights into the evolution of the field, while the focus on context management and deployment has equipped me with essential skills for building and deploying modern web applications. Overcoming the challenges associated with context management has been rewarding, and I feel more confident in applying these techniques to my projects. I’m excited to continue refining my skills and integrating these concepts into my work in the coming weeks.
+        </p>
+      </div>,
+      },
+      {
+        id: 7,
+title: "Blog Post Week 6",
+thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+content: 
+<div>
+  <p>
+    <b>Week 6: Dev Blog</b><br></br>
+    This week marked the final part of our React series, with a focus on integrating CSS into our React applications. Additionally, we explored the concept of CodeArt. Despite the public holiday, which meant no formal classes, the week was still productive with continued work on React exercises and ongoing challenges.
+    <br></br>
+    <b>Continuing Previous Week’s Struggles:</b> Continuing from last week, I faced similar challenges with context management and deployment. The intricacies of context providers and managing state across the application remained complex. However, persistence is paying off, as repeated practice is gradually making these concepts clearer. Deploying applications also continued to pose issues, particularly with ensuring the correct configurations and resolving build errors. Each deployment attempt, though sometimes frustrating, is a learning experience that builds my troubleshooting skills.
+    <br></br>
+    <b>Theory:</b> While there were no specific theory readings assigned this week, the concept of CodeArt was introduced. CodeArt blends programming and artistic expression, using code as a medium to create art. This concept is fascinating as it aligns with the evolving nature of internet art, where technology and creativity intersect.
+    <br></br>
+    <b>ReactJS:</b>
+    <br></br>
+    <b>CSS Integration:</b> This week’s React exercises focused on integrating CSS into our applications. Styling React components efficiently is essential for creating visually appealing and user-friendly applications. We explored various methods, including inline styles, CSS modules, and styled-components. Each method has its pros and cons, and understanding when to use each is crucial for maintaining clean and manageable code. Integrating CSS into React brought its own set of challenges. Inline styles, while convenient for dynamic styling, can become unwieldy and difficult to maintain in larger applications. CSS modules offer better modularity and prevent style conflicts, but they require a different approach to organizing styles. Styled-components provide a powerful way to style components with JavaScript, but they introduce a new layer of complexity. Balancing these methods and choosing the right approach for different scenarios was a key learning point.
+    <br></br>
+    <b>Technical Exercises:</b> The practical exercises on CSS integration were beneficial. They provided hands-on experience in applying different styling techniques within React. Experimenting with inline styles, CSS modules, and styled-components helped solidify my understanding of each method's advantages and limitations. These exercises also reinforced the importance of maintaining a consistent and organized styling approach to enhance the overall user experience.
+    <br></br>
+    Week 6 was a blend of consolidating previous learnings and tackling new challenges with CSS integration. The ongoing struggles with context management and deployment highlighted the importance of persistence and continuous learning. The introduction of CodeArt opened new avenues for creative expression using code, aligning with the broader themes of internet art. As we move forward, I’m eager to apply these insights to my projects, continuing to refine my skills and embrace the intersection of technology and creativity.
+  </p>
+</div>,
+      },
+      {
+        id: 8,
+title: "Blog Post Week 7",
+thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+content: 
+<div>
+  <p>
+    <b>Week 7: Dev Blog</b><br></br>
+    This week was a bit different, as it coincided with our mid-semester break. Despite the break, we had a technical exercise focusing on creating an e-commerce application using React. This was a practical and intensive task, providing a great opportunity to apply what we’ve learned so far in a real-world scenario.
+    <br></br>
+    <b>ReactJS: E-commerce Exercise:</b> The e-commerce exercise was a comprehensive project that required integrating various React concepts we've covered over the past weeks. This exercise encompassed creating a fully functional e-commerce application, complete with product listings, a shopping cart, and user interactions.
+    <br></br>
+    <b>Key Components of the Exercise:</b>
+    <br></br>
+    <b>1. Product Listings:</b>
+    <ul>
+      <li>Creating a dynamic product listing page using React components.</li>
+      <li>Implementing state management to handle product data.</li>
+    </ul>
+    <b>2. Shopping Cart:</b>
+    <ul>
+      <li>Building a shopping cart component that updates as users add or remove products.</li>
+      <li>Managing the state of the cart using context to ensure data consistency across the application.</li>
+    </ul>
+    <b>3. User Interactions:</b>
+    <ul>
+      <li>Adding features like quantity adjustments and removing items from the cart.</li>
+      <li>Using conditional rendering to update the UI based on user actions.</li>
+    </ul>
+    <br></br>
+    <b>Challenges Faced:</b>
+    <br></br>
+    <b>1. State Management:</b>
+    <ul>
+      <li>Managing state across the application was challenging, particularly ensuring that the cart state remained consistent. Using context for global state management was essential, but it required careful planning to avoid unnecessary re-renders and performance issues.</li>
+    </ul>
+    <b>2. CSS Integration:</b>
+    <ul>
+      <li>Styling the application to make it visually appealing and user-friendly involved integrating CSS effectively. Balancing between inline styles, CSS modules, and styled-components was crucial to maintain a clean and manageable codebase.</li>
+    </ul>
+    <b>3. Handling User Actions:</b>
+    <ul>
+      <li>Implementing features like adding items to the cart, adjusting quantities, and removing items involved complex logic. Ensuring that these actions were handled efficiently and that the UI updated correctly was a significant challenge.</li>
+    </ul>
+    <br></br>
+    <b>Technical Learning:</b> This exercise was invaluable in solidifying my understanding of React’s core concepts in a practical setting. It provided hands-on experience with state management, context, and component design, all critical skills for building complex applications. Working through these challenges helped deepen my knowledge and improve my problem-solving skills.
+  </p>
+</div>,
+      },
+      {
+        id: 9,
+title: "Blog Post Week 8",
+thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+content: 
+<div>
+  <p>
+    <b>Week 8: Dev Blog</b><br></br>
+    This week was a pivotal blend of theory and practical application, focusing on completing a comprehensive e-commerce example in React and exploring Interaction Design (IxD) principles for the web.
+    <br></br>
+    <b>Theory:</b>
+    <br></br>
+    <b>The Basic Principles of User Interface Design:</b> We delved into the foundational principles of User Interface (UI) design, exploring concepts like simplicity, consistency, and feedback. Understanding these principles is crucial for creating intuitive and user-friendly web applications.
+    <br></br>
+    <b>What is Design by Papanek (1984):</b> Papanek's seminal work provided a broader perspective on design, emphasizing its impact on society and the environment. This reading encouraged us to consider the ethical implications of our design decisions and the importance of designing with purpose and responsibility.
+    <br></br>
+    <b>Alternative Approaches to Interface Technology by Gibson (2004):</b> Gibson's article introduced alternative approaches to interface technology, challenging traditional notions of user interaction. Exploring these alternative perspectives broadened our understanding of interface design and encouraged creative thinking in our development process.
+    <br></br>
+    <b>Technical:</b>
+    <br></br>
+    <b>ReactJS - E-commerce Application Exercise Walk-through:</b> The in-class session featured a detailed walk-through of the e-commerce application exercise. This session provided practical insights into structuring React components, managing state effectively, and handling user interactions in a complex application.
+    <br></br>
+    <b>ReactJS - E-commerce Code Solution:</b> We examined the complete code solution for the e-commerce application, reinforcing best practices and design patterns in React development. This analysis helped solidify our understanding of React concepts and provided valuable insights into optimizing code for performance and maintainability.
+    <br></br>
+    <b>Key Learning Points:</b>
+    <ul>
+      <li><b>User-Centered Design:</b> Understanding the basic principles of UI design and incorporating user feedback to create intuitive and engaging web experiences.</li>
+      <li><b>Ethical Design Practices:</b> Considering the broader societal and environmental impacts of design decisions, as highlighted by Papanek's work, and striving to design with purpose and responsibility.</li>
+      <li><b>Innovative Interface Technology:</b> Exploring alternative approaches to interface technology, as suggested by Gibson, to encourage creative thinking and innovation in our design process.</li>
+    </ul>
+    <br></br>
+    <b>Challenges:</b>
+    <ul>
+      <li><b>Complex State Management:</b> Navigating complex state management challenges in React, particularly in applications with multiple components and user interactions.</li>
+      <li><b>Design Consistency:</b> Ensuring consistency in design elements and user interactions throughout the application to provide a cohesive user experience.</li>
+      <li><b>Optimizing Performance:</b> Identifying and addressing performance bottlenecks to ensure a smooth and responsive user experience, especially in large-scale applications.</li>
+    </ul>
+  </p>
+</div>,
+      },
+      {
+        id: 10,
+title: "Blog Post Week 9",
+thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+content: 
+<div>
+  <p>
+    <b>Week 9: Dev Blog</b><br></br>
+    This week's focus shifted towards the significance of coding practices and the impact they have beyond mere functionality. Exploring critical code literacies illuminated the broader implications of coding beyond technical proficiency.
+    <br></br>
+    <b>Theory:</b>
+    <br></br>
+    <b>Recorded Lecture: How We Code Matters:</b> The recorded lecture delved into the concept of "How We Code Matters," emphasizing the broader implications of coding practices beyond their technical functionality. Understanding the social, cultural, and ethical dimensions of coding is essential for responsible and effective software development.
+    <br></br>
+    <b>Introducing Critical Code Literacies:</b> The introduction to critical code literacies expanded upon the notion that coding is not just about writing functional code but also about understanding the broader societal implications of our code. It highlighted the importance of critical thinking and awareness in coding practices, encouraging developers to consider the ethical, cultural, and political aspects of their work.
+    <br></br>
+    <b>Key Takeaways:</b>
+    <ul>
+      <li><b>Social Responsibility:</b> Recognizing the social responsibility inherent in coding and understanding the potential impact of our code on individuals and society at large.</li>
+      <li><b>Ethical Considerations:</b> Considering the ethical implications of coding decisions, including issues such as data privacy, algorithmic bias, and accessibility.</li>
+      <li><b>Cultural Sensitivity:</b> Acknowledging the cultural context in which our code operates and ensuring that our software is inclusive and respectful of diverse perspectives and backgrounds.</li>
+    </ul>
+    <br></br>
+    <b>Practical Application:</b> In addition to theoretical discussions, this week provided an opportunity to reflect on our coding practices and consider how we can incorporate critical code literacies into our development workflow. This involves not only writing clean and efficient code but also considering the broader implications of our code on society and the environment.
+    <br></br>
+    <b>Challenges:</b>
+    <ul>
+      <li><b>Awareness and Education:</b> One of the primary challenges is raising awareness and educating developers about the importance of critical code literacies. It requires a shift in mindset from purely technical proficiency to a more holistic understanding of coding's impact.</li>
+      <li><b>Implementation in Practice:</b> Integrating critical code literacies into everyday coding practices can be challenging, especially in fast-paced development environments where the focus is often on meeting deadlines and delivering functionality. Finding ways to prioritize ethical considerations alongside technical requirements is crucial.</li>
+      <li><b>Collaboration and Dialogue:</b> Encouraging open dialogue and collaboration among developers, designers, and other stakeholders can help foster a culture of responsible coding practices. By engaging in discussions about the social and ethical implications of our code, we can collectively work towards more inclusive and sustainable software development practices.</li>
+    </ul>
+  </p>
+</div>,
+      },
+      {
+        id: 11,
+title: "Blog Post Week 10",
+thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+content: 
+<div>
+  <p>
+    <b>Week 10: Dev Blog</b><br></br>
+    This week immersed us in the realm of CodeArt, exploring the intersection of coding and artistic expression. Delving into the concept of CodeArt and its application in DevArt shed light on the creative potential of coding beyond functional applications.
+    <br></br>
+    <b>Theory:</b>
+    <br></br>
+    <b>CodeArt / DevArt:</b> The exploration of CodeArt and DevArt introduced us to the concept of using code as a medium for artistic expression. This form of creative coding transcends traditional boundaries, blending programming with art to create interactive and visually captivating experiences.
+    <br></br>
+    <b>Code, Art?... in JavaScript:</b> The discussion on CodeArt in JavaScript delved deeper into the creative possibilities offered by JavaScript as a programming language. From generative art to interactive installations, JavaScript provides a versatile platform for artists to express their creativity through code.
+    <br></br>
+    <b>Key Concepts:</b>
+    <ul>
+      <li><b>Creative Coding:</b> Understanding the concept of creative coding and its role in bridging the gap between art and technology. Creative coding empowers artists to use code as a tool for self-expression and exploration.</li>
+      <li><b>Interactivity and Engagement:</b> Recognizing the potential of interactive experiences in CodeArt to engage audiences in new and innovative ways. Interactive installations and web-based artworks invite viewers to actively participate and become part of the artistic experience.</li>
+      <li><b>Exploration and Experimentation:</b> Encouraging experimentation and exploration in CodeArt, embracing the iterative nature of coding as a creative process. Trying out new techniques and pushing the boundaries of what is possible with code fosters innovation and growth as an artist.</li>
+    </ul>
+    <br></br>
+    <b>Practical Application:</b> This week provided an opportunity to experiment with CodeArt firsthand, exploring JavaScript libraries and frameworks for creative coding projects. From visualizing data to creating interactive animations, the possibilities were endless, allowing us to unleash our creativity and push the limits of what we could achieve with code.
+    <br></br>
+    <b>Challenges:</b>
+    <ul>
+      <li><b>Technical Proficiency:</b> Developing proficiency in creative coding techniques and mastering JavaScript libraries and frameworks requires time and practice. Overcoming technical challenges and honing our coding skills is essential for realizing our artistic vision.</li>
+      <li><b>Conceptualization and Design:</b> Translating artistic concepts into code presents its own set of challenges, requiring a deep understanding of both artistic principles and programming fundamentals. Finding the right balance between form and function is crucial for creating compelling CodeArt pieces.</li>
+      <li><b>Accessibility and Inclusivity:</b> Ensuring that CodeArt projects are accessible and inclusive to all audiences is paramount. Considering factors such as usability, performance, and device compatibility helps to create artworks that can be enjoyed by a diverse range of viewers.</li>
+    </ul>
+    <br></br>
+    Week 10 immersed us in the exciting world of CodeArt, exploring the creative potential of coding as a medium for artistic expression. From interactive installations to web-based artworks, CodeArt offers endless possibilities for innovation and exploration. As we continue to experiment with creative coding techniques, we are excited to push the boundaries of what is possible with code and create meaningful and impactful CodeArt pieces.
+  </p>
+</div>,
+      },
+      {
+        id: 12,
+title: "Blog Post Week 11",
+thumbnail:`${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+content: 
+<div>
+  <p>
+    <b>Week 11: Dev Blog: Reflection and Planning</b><br></br>
+    As I embark on the journey of creating my skincare and beauty e-commerce website, I find myself immersed in a world of pastel colors, clean imagery, and the promise of easy navigation. This week, I delve into the planning phase, laying the groundwork for what promises to be a visually stunning and user-friendly platform for beauty enthusiasts.
+    <br></br>
+    <b>Reflecting on the Vision:</b> The vision for my website revolves around creating a serene and inviting atmosphere where visitors can explore an array of skincare and beauty products with ease. Pastel colors evoke a sense of calm and elegance, perfectly complementing the clean imagery that will showcase our products in their best light.
+    <br></br>
+    <b>Planning the Content and Structure:</b> With the project requirements in mind, I meticulously plan the content and structure of the website. Each product category will be thoughtfully organized, ensuring a seamless browsing experience for visitors. From cleansers to moisturizers, every skincare essential will have its dedicated space, making it effortless for customers to find what they need.
+    <br></br>
+    <b>Designing the Experience:</b> Wireframing each page of the website allows me to visualize the layout and flow of information. The homepage will welcome visitors with a soft color palette and striking imagery, enticing them to explore further. The design section will feature product highlights and recommendations, while the theory section will provide valuable skincare tips and insights. The Internet Art pages will serve as a creative showcase, adding an element of whimsy and charm to the overall experience.
+    <br></br>
+    <b>Setting Up the Development Environment:</b> Installing the React project template sets the stage for bringing my vision to life. Establishing a GitHub repository for version control ensures that my progress is saved and documented every step of the way. As I practice pushing and deploying the application, I feel a sense of excitement and anticipation for what's to come.
+    <br></br>
+    <b>Developing the Website:</b> With the basic project structure in place, I begin fleshing out the website, one component at a time. The router facilitates seamless navigation, while state management ensures a smooth and responsive user experience. Committing changes regularly to GitHub allows me to track my progress and iterate as needed.
+    <br></br>
+    <b>Adding Interactivity and Functionality:</b> Interactive elements such as product galleries and filtering options enhance the browsing experience, making it easy for customers to discover new favorites. Testing functionality across different devices and browsers ensures that the website performs flawlessly, no matter how visitors choose to access it.
+    <br></br>
+    <b>Preparing for Internet Artwork Integration:</b> As I outline the preparatory work for integrating Internet Artwork, I'm inspired by the opportunity to infuse creativity into every aspect of the website. From concept to execution, I envision a seamless blend of art and technology that will captivate and delight visitors.
+    <br></br>
+    <b>Finalizing and Reviewing:</b> Thorough testing and review ensure that the website meets all aesthetic, functional, and technical requirements. From usability testing to bug fixing, I leave no stone unturned in my quest for perfection.
+    <br></br>
+    <b>Deployment and Documentation:</b> With the website fully functional and free of critical bugs, I deploy it to GitHub Pages, eager to share it with the world. Documentation of the design and development process, along with UI/UX decisions, provides valuable insights for future iterations and improvements.
+    <br></br>
+    <b>Reflection and Continuous Improvement:</b> As I reflect on the journey thus far, I'm filled with a sense of pride and accomplishment. Yet, I know that this is just the beginning. Continuous improvement is key, and I look forward to expanding and refining the website in the days and weeks to come, always striving to create a seamless and delightful experience for our customers.
+  </p>
+</div>,
+      },
+      {
+        id: 13,
+        title: "Week 12: Dev Blog",
+        thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+        content: 
+          <div>
+            <p>
+              <b>Week 12: Dev Blog: Exploring AI and Art</b>
+              <br />
+              This week, the intersection of artificial intelligence (AI) and art takes center stage, offering a fascinating glimpse into the evolving relationship between technology and creativity. As I delve into the theoretical and technical aspects of AI in art, I'm intrigued by the possibilities and implications of this emerging field.
+            </p>
+            <p>
+              <b>Exploring the Theoretical Landscape:</b> Diving into the readings, I encounter a rich tapestry of perspectives on AI's role in artistic creation. Audry and Ippolito's article prompts me to ponder whether AI can truly produce art independently of human input, raising thought-provoking questions about the viewer's role in the creative process. Broeckmann's exploration of the machine as an artist as myth challenges conventional notions of creativity, inviting me to reconsider the boundaries between human and machine-generated art.
+            </p>
+            <p>
+              <b>Technical Insights into AI Art:</b> In the technical session, I engage in a UI/UX walkthrough focused on AI and art, gaining practical insights into designing user interfaces that facilitate interaction with AI-generated artworks. This hands-on experience deepens my understanding of how AI can be integrated into artistic practice to enhance user engagement and creativity.
+            </p>
+            <p>
+              <b>Key Readings:</b> The readings provide a comprehensive overview of AI's impact on art, from the potential of artificial general intelligence to the ethical considerations surrounding computational creativity. Mazzone and Elgammal's exploration of AI's potential in fostering creativity inspires me to explore new avenues of artistic expression, while Peng's examination of AI and copyright prompts me to consider the legal and ethical implications of AI-generated art.
+            </p>
+            <p>
+              <b>Reflecting on the Future:</b> As I reflect on the implications of AI in art, I'm struck by the transformative potential of this technology to revolutionize the creative process. While AI offers exciting opportunities for innovation and experimentation, it also raises complex questions about authorship, originality, and the nature of artistic expression. Pruijt's analysis of social interaction with computers reminds me of the importance of human involvement in shaping AI's creative output, emphasizing the symbiotic relationship between humans and machines in the artistic process.
+            </p>
+            <p>
+              <b>Moving Forward:</b> As I delve deeper into the fascinating intersection of AI and art, I'm eager to explore how this technology can enrich my own creative practice. By embracing AI as a tool for experimentation and collaboration, I hope to push the boundaries of traditional artistic mediums and forge new pathways for expression. With each new insight gained, I'm excited to embark on this journey of exploration and discovery, navigating the evolving landscape of AI art with curiosity and imagination.
+            </p>
+          </div>
+      },
+      {
+        id: 14,
+        title: "Week 13: Dev Blog: Exploring Ethnocomputing and Digital Art",
+        thumbnail: `${process.env.PUBLIC_URL}/Images/BlogPost.png`,
+        content: 
+          <div>
+            <p>
+              <b>Week 13: Dev Blog: Exploring Ethnocomputing and Digital Art</b>
+              <br />
+              This week delves into the fascinating realms of ethnocomputing and digital art, offering insights into the intersection of technology, culture, and artistic expression. As I navigate through the theoretical discussions and practical applications of these concepts, I'm captivated by the rich diversity and innovative potential they present.
+            </p>
+            <p>
+              <b>Exploring African Digital Art:</b> Immersing myself in the world of African digital art opens up a realm of creativity and cultural exploration. Bisschoff's introduction to African digital arts provides a compelling overview, highlighting the dynamic fusion of traditional aesthetics with contemporary digital mediums. Pijnaker and Spronk's exploration of digital technologies in Ghanaian games and comics offers valuable insights into the role of technology in shaping cultural narratives and expressions.
+            </p>
+            <p>
+              <b>Understanding Ethnocomputing:</b> The concept of ethnocomputing sheds light on the intricate relationship between technology and cultural practices. From indigenous algorithms to culturally situated design tools, the readings by Babbitt et al. and Eglash et al. offer thought-provoking perspectives on how technology can be harnessed to preserve and celebrate cultural heritage. Tedre et al.'s exploration of ICT in cultural and social contexts further deepens my understanding of the transformative power of technology in diverse communities.
+            </p>
+            <p>
+              <b>Bridging Cultures Through Digital Art:</b> As I reflect on the potential of digital art to bridge cultures and amplify diverse voices, Lameman and Lewis' work on designing games with First Nations youth resonates deeply. Their emphasis on empowering indigenous communities through creative expression serves as a powerful reminder of the transformative impact of art and technology on cultural identity and empowerment.
+            </p>
+            <p>
+              <b>Challenges and Opportunities:</b> While the fusion of ethnocomputing and digital art presents exciting opportunities for innovation and cultural exchange, it also poses challenges. Bishop's critique of digital art history prompts me to question the dominant narratives and power dynamics inherent in technological innovation, urging me to approach these intersections with critical awareness and reflexivity.
+            </p>
+            <p>
+              <b>Moving Forward:</b> As I navigate through the complexities and possibilities of ethnocomputing and digital art, I'm inspired to explore new avenues of creativity and collaboration. By embracing technology as a tool for cultural preservation, expression, and empowerment, I hope to contribute to a more inclusive and vibrant artistic landscape that celebrates the richness and diversity of human experience. With each new insight gained, I'm excited to embark on this journey of exploration and discovery, forging meaningful connections between technology, culture, and creativity.
+            </p>
+          </div>
+      },
   ]);
 
   // State to keep track of selected blog and its content visibility
