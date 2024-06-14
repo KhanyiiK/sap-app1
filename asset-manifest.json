@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/sap-app1/static/js/main.593f022b.js",
+    "main.css": "/sap-app1/static/css/main.10c8980e.css",
+    "main.js": "/sap-app1/static/js/main.17d05ff0.js",
     "index.html": "/sap-app1/index.html",
-    "main.593f022b.js.map": "/sap-app1/static/js/main.593f022b.js.map"
+    "main.10c8980e.css.map": "/sap-app1/static/css/main.10c8980e.css.map",
+    "main.17d05ff0.js.map": "/sap-app1/static/js/main.17d05ff0.js.map"
   },
   "entrypoints": [
-    "static/js/main.593f022b.js"
+    "static/css/main.10c8980e.css",
+    "static/js/main.17d05ff0.js"
   ]
 }
